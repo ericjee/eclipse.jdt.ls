@@ -486,8 +486,8 @@ public class JavaLanguageServerPlugin extends Plugin {
 			FileOutputStream stdFileErr = new FileOutputStream(errFile);
 			System.setErr(new PrintStream(stdFileErr));
 		} else {
-			System.setOut(new PrintStream(new ByteArrayOutputStream()));
-			System.setErr(new PrintStream(new ByteArrayOutputStream()));
+			// System.setOut(new PrintStream(new ByteArrayOutputStream()));
+			// System.setErr(new PrintStream(new ByteArrayOutputStream()));
 		}
 	}
 
